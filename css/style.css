@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family:Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth ;
+}
+
+body {
+    min-height: 5000px;
+    
+}
+.inicio {
+    background:rgba(235, 130, 10, 0.904);
+    position: relative;
+    width: 100%;
+    
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    background-size: cover;
+}
+
+.inicio .container{
+    max-width: 900px;
+    text-align: center;
+    
+}
+
+.inicio .container h2{
+    font-size: 2em;
+    color: cornsilk;
+}
+
+.inicio .container p{
+    font-size: 1em;
+    color: cornsilk;
+}
+
+.btn_cardapio {
+    font-size: 1em;
+    color: cornsilk;
+    background: rgba(255, 251, 0, 0.329);
+    display: inline-block;
+    
+    letter-spacing: 2px;
+    margin-top: 20px;
+    padding: 10px 30px;   
+    
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+}
+header {
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    
+    left: 0;
+    top: 0;
+    padding: 40px 100px;
+    
+    display: flexbox;
+    justify-content: space-between;
+    transition: 0.5s;
+    z-index: 100;
+}
+
+header .container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: cornsilk;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header nav a {
+    color: cornsilk;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: rgba(255, 251, 0, 0.377);
+}
+
+
+header.sticky {
+    background: cornsilk;
+    padding: 10px 100px;
+    }
+
+header.sticky .logo {
+        color: rgba(0, 0, 0, 0.932);
+        }
+
+header.sticky nav a {
+    color: rgba(0, 0, 0, 0.932);
+}
+
+header.sticky nav a:hover{
+    color: chocolate;
+} 
+
+section {
+    padding: 100px;
+}
+
+.sobre .container{
+    position: relative;
+    width: 100%;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.container .sobre_nos {
+    position: relative;
+    width: 48%;
+}
+
+.container .sobre_nos .box_img {
+    position: relative;
+    width: 100%;
+    min-height: 320px;
+
+}
+
+.sobre_nos .box_img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}

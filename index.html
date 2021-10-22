@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <title>Modelo de site</title>
+</head>
+
+<body>
+    
+    <header>
+        <div class="container">
+            
+            <h2 class="logo">FOOD.BR</h2>
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#cardapio">Cardápio</a>
+                <a href="#comentarios">Comentários</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="inicio" id="inicio">
+        <div class="container">
+            <h2>Só estou aqui pela comida mesmo!</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit magna eget massa commodo, non ullamcorper sapien molestie. </p>
+            <a href="#" class="btn_cardapio">Nosso cardápio</a>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="sobre_nos">
+                <h2>Sobre nós</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt augue in orci tempus vulputate. Duis et consectetur lacus, sed fermentum libero. Pellentesque ac massa mollis, eleifend mi ut, porttitor mi. Donec eleifend convallis ex. Vestibulum interdum libero at ante viverra consequat. Curabitur at metus aliquet, pharetra nunc non, ornare elit. Maecenas malesuada facilisis mauris vel gravida. Sed viverra enim eget viverra pellentesque. Mauris risus neque, consequat vitae elementum at, rhoncus vitae metus. Vestibulum viverra in arcu eget malesuada. <br> <br> Duis rutrum iaculis eros at ornare. Fusce vel sem non sapien bibendum rutrum vel et sem. Curabitur pulvinar, mauris sit amet maximus imperdiet, sem metus vulputate metus, vitae venenatis lorem ligula quis libero. Suspendisse laoreet orci consectetur dui mattis, et tempus nulla accumsan. Sed bibendum ipsum in dui venenatis, nec vulputate purus blandit. Suspendisse iaculis velit pretium dolor luctus lobortis. Quisque nec nunc sapien. Donec dignissim ipsum nisi, at ultricies nunc vehicula tempus. </p>
+            </div>
+
+            <div class="sobre_nos">
+                <div class="box_img">
+                   <img src="img\sobrenos.jpg" alt=""> 
+                   
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2>Nosso Cardápio</h2>
+
+        </div>
+    </section>
+    
+    <!--JAVASCRIPT-->
+    <script type="text/javascript"> 
+    window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    header.classList.toggle("sticky", window.scrollY > 0);    
+    });
+    </script>
+
+</body>
+</html>
