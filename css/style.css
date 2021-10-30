@@ -8,11 +8,11 @@
 }
 
 body {
-    min-height: 5000px;
+    min-height: 4000px;
     
 }
 .inicio {
-    background:rgba(235, 130, 10, 0.904);
+    background: linear-gradient(rgba(0,0,0,.50),rgba(10, 10, 10, 0.5)100%), url(../img/item02.png);
     position: relative;
     width: 100%;
     
@@ -32,18 +32,19 @@ body {
 
 .inicio .container h2{
     font-size: 2em;
-    color: cornsilk;
+    color: rgb(255, 255, 255);
 }
 
 .inicio .container p{
     font-size: 1em;
-    color: cornsilk;
+    color: rgb(255, 255, 255);
+    
 }
 
 .btn_cardapio {
     font-size: 1em;
-    color: cornsilk;
-    background: rgba(255, 251, 0, 0.329);
+    color: rgb(255, 255, 255);
+    background: rgb(211, 8, 194);
     display: inline-block;
     
     letter-spacing: 2px;
@@ -77,14 +78,14 @@ header .container {
 }
 
 header .logo{
-    color: cornsilk;
+    color: rgb(255, 255, 255);
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
 }
 
 header nav a {
-    color: cornsilk;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     margin-right: 10px;
 }
@@ -144,4 +145,190 @@ section {
     height: 100%;
     object-fit: cover;
     
+}
+
+.titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardapio .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+}
+
+.cardapio .container .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid rgb(255, 255, 255);
+
+box-shadow: 0 5px 35px rgba(255, 255, 255, 0.822);   
+}
+
+.cardapio .container .box .box_img {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.cardapio .container .box .box_img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.cardapio .container .box .texto {
+    padding: 15px 0 5px;
+}
+
+.cardapio .container .box .texto h3 {
+    font-weight: 400;
+    color: rgb(15, 15, 15);
+}
+
+.comentarios .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    flex-direction: row ;
+    margin-top: 40px;
+}
+
+.comentarios .container .box{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: rgb(160, 16, 16);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.comentarios .container .box .box_img{
+    position: relative;
+    width: 80px;
+    height: 80px;
+
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.comentarios .container .box .box_img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+}
+
+.comentarios .container .box .texto {
+ text-align: center;  
+ 
+}
+
+.comentarios .container .box .texto p {
+    color: rgb(220, 220, 220);
+    font-style: italic;
+}
+
+.comentarios .container .box .texto h3 {
+    margin-top: 20px;
+    color: rgb(220, 220, 220);
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.contato {
+    background: url(../img/contato02.jpg);
+    background-size: cover;
+    
+    
+
+}
+
+.contato .container {
+    padding: 100px 50px;
+    background:rgb(255, 255, 255);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.contato .container h3 {
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    margin-bottom: 20px;
+
+    font-weight: 500;
+}
+
+.contato .container .inputbox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contato .container .inputbox input {
+    width: 100%;
+    border: 1px solid rgb(85, 85, 85);
+    padding: 10px;
+    color: rgb(0,0,0);
+
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.contato .container .inputbox input[type="submit"] {
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    background: rgb(160, 16, 16);
+    
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.contato .container .inputbox textarea {
+    width: 100%;
+    border: 1px solid rgb(85, 85, 85);
+    padding: 10px;
+    color: rgb(0,0,0);
+
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
 }
